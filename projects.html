@@ -2,29 +2,116 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Projects | ICT Initiatives</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Tracker | ICT Initiatives</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">PH ICT Governance</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agencies.html">Agencies</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
     <main class="container">
-        <h1>Major ICT Projects Tracker</h1>
-        <table class="card">
-            <tr>
-                <th>Project Name</th>
-                <th>Implementing Agency</th>
-                <th>Progress</th>
-            </tr>
-            <tr>
-                <td>National Broadband Plan</td>
-                <td>DICT</td>
-                <td><progress value="65" max="100"></progress> 65%</td>
-            </tr>
-            <tr>
-                <td>PhilSys (National ID)</td>
-                <td>PSA / DICT</td>
-                <td><progress value="90" max="100"></progress> 90%</td>
-            </tr>
-        </table>
+        <header style="margin-bottom: 30px;">
+            <h1>Major ICT Initiatives Tracker</h1>
+            <p style="color: #666;">Monitoring the progress and implementation of national digital transformation programs.</p>
+        </header>
+
+        <div class="card" style="overflow-x: auto;">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Implementing Agency</th>
+                        <th>Progress Status</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>National Broadband Plan (NBP)</strong></td>
+                        <td>DICT</td>
+                        <td>
+                            <progress value="65" max="100" style="width: 100%;"></progress>
+                            <br><small>65% Complete</small>
+                        </td>
+                        <td>
+                            <small><strong>Goal:</strong> High-speed internet for all.<br>
+                            <strong>Target:</strong> Q4 2026</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>PhilSys (National ID)</strong></td>
+                        <td>PSA / DICT</td>
+                        <td>
+                            <progress value="90" max="100" style="width: 100%;"></progress>
+                            <br><small>90% Complete</small>
+                        </td>
+                        <td>
+                            <small><strong>Goal:</strong> Unified ID system.<br>
+                            <strong>Status:</strong> Mass Distribution</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Free Wi-Fi for All</strong></td>
+                        <td>DICT</td>
+                        <td>
+                            <progress value="55" max="100" style="width: 100%;"></progress>
+                            <br><small>55% Complete</small>
+                        </td>
+                        <td>
+                            <small><strong>Goal:</strong> Public access points.<br>
+                            <strong>Launch:</strong> 2017 (Ongoing)</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>National Cybersecurity Plan</strong></td>
+                        <td>DICT / CICC</td>
+                        <td>
+                            <progress value="75" max="100" style="width: 100%;"></progress>
+                            <br><small>75% Complete</small>
+                        </td>
+                        <td>
+                            <small><strong>Goal:</strong> Protect critical infra.<br>
+                            <strong>Timeline:</strong> 2024-2028</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>DigitalJobsPH</strong></td>
+                        <td>DICT</td>
+                        <td>
+                            <progress value="100" max="100" style="width: 100%;"></progress>
+                            <br><small>100% (Active)</small>
+                        </td>
+                        <td>
+                            <small><strong>Goal:</strong> ICT training in rural areas.<br>
+                            <strong>Status:</strong> Operational</small>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section class="stats-grid" style="margin-top: 20px;">
+            <div class="card" style="border-top: 5px solid #003366;">
+                <h3>Project Focus: NBP</h3>
+                <p style="font-size: 0.9rem;">The National Broadband Plan aims to lower the cost of internet while increasing speed across 81 provinces.</p>
+            </div>
+            <div class="card" style="border-top: 5px solid #28a745;">
+                <h3>Success Note: PhilSys</h3>
+                <p style="font-size: 0.9rem;">Over 80 million Filipinos are now registered in the PhilSys database, enabling easier access to social services.</p>
+            </div>
+        </section>
     </main>
+
+    <footer>
+    </footer>
 </body>
 </html>
