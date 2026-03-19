@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Governance Dashboard | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">PH ICT Governance</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agencies.html">Agencies</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h1>National ICT Governance Overview</h1>
+        <div class="stats-grid">
+            <div class="card">
+                <h3>Cybercrime Cases</h3>
+                <p class="stat-number">15,420</p>
+                <span class="badge stable">Stable</span>
+            </div>
+            <div class="card">
+                <h3>Active ICT Projects</h3>
+                <p class="stat-number">42</p>
+                <span class="badge update">Updates Available</span>
+            </div>
+            <div class="card">
+                <h3>Free Wi-Fi Points</h3>
+                <p class="stat-number">12,800</p>
+                <span class="badge stable">Online</span>
+            </div>
+        </div>
+
+        <section class="chart-container card">
+            <h2>Agency Statistics (Visual Representation)</h2>
+            <canvas id="dashboardChart"></canvas>
+        </section>
+    </main>
+
+    <footer>
+        <p>Group Name | Members: [Names] | ITSP410-T | TUP Taguig</p>
+    </footer>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
