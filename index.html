@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICT Governance Dashboard | Home</title>
+    <title>National ICT Governance Dashboard | Home</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
@@ -19,35 +19,76 @@
         </ul>
     </nav>
 
+    <header class="hero" style="background: #003366; color: white; padding: 40px 5%; text-align: center;">
+        <h1>National ICT Governance Dashboard</h1>
+        <p>Real-time statistics, program updates, and cybersecurity transparency for the Philippine digital landscape.</p>
+    </header>
+
     <main class="container">
-        <h1>National ICT Governance Overview</h1>
         <div class="stats-grid">
             <div class="card">
-                <h3>Cybercrime Cases</h3>
+                <h3>Cybercrime Cases (YTD)</h3>
                 <p class="stat-number">15,420</p>
-                <span class="badge stable">Stable</span>
+                <span class="badge stable">● Stable</span>
             </div>
             <div class="card">
                 <h3>Active ICT Projects</h3>
                 <p class="stat-number">42</p>
-                <span class="badge update">Updates Available</span>
+                <span class="badge update">● 3 New Updates</span>
             </div>
             <div class="card">
-                <h3>Free Wi-Fi Points</h3>
+                <h3>Free Wi-Fi Access Points</h3>
                 <p class="stat-number">12,800</p>
-                <span class="badge stable">Online</span>
+                <span class="badge stable">● 98% Uptime</span>
             </div>
         </div>
 
-        <section class="chart-container card">
-            <h2>Agency Statistics (Visual Representation)</h2>
-            <canvas id="dashboardChart"></canvas>
+        <div class="stats-grid" style="grid-template-columns: 2fr 1fr; margin-top: 20px;">
+            <section class="chart-container card">
+                <h2>Agency Performance Statistics</h2>
+                <p style="font-size: 0.9rem; color: #666; margin-bottom: 15px;">Comparative data showing active ICT initiatives per government agency.</p>
+                <canvas id="dashboardChart"></canvas>
+            </section>
+
+            <section class="card">
+                <h2>System Status</h2>
+                <ul style="list-style: none; padding: 0; margin-top: 15px;">
+                    <li style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+                        <strong>DICT Gateway:</strong> <span style="color: green;">Normal</span>
+                    </li>
+                    <li style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+                        <strong>NPC Privacy Portal:</strong> <span style="color: green;">Normal</span>
+                    </li>
+                    <li style="margin-bottom: 15px;">
+                        <strong>Cyber-Alert Level:</strong> <span style="color: orange;">Elevated</span>
+                    </li>
+                </ul>
+                <a href="alerts.html" class="badge update" style="text-decoration: none; display: inline-block; text-align: center; width: 100%;">View Threat Level Details</a>
+            </section>
+        </div>
+
+        <section style="margin-top: 30px;">
+            <h2>Quick Access Agency Profiles</h2>
+            <div class="stats-grid" style="margin-top: 15px;">
+                <a href="agencies.html#dict" class="card" style="text-decoration: none; color: inherit; text-align: center;">
+                    <strong>DICT</strong>
+                    <p style="font-size: 0.8rem;">National Strategy</p>
+                </a>
+                <a href="agencies.html#npc" class="card" style="text-decoration: none; color: inherit; text-align: center;">
+                    <strong>NPC</strong>
+                    <p style="font-size: 0.8rem;">Data Privacy</p>
+                </a>
+                <a href="agencies.html#nbi" class="card" style="text-decoration: none; color: inherit; text-align: center;">
+                    <strong>NBI/DOJ</strong>
+                    <p style="font-size: 0.8rem;">Cyber Enforcement</p>
+                </a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>Group Name | Members: [Names] | ITSP410-T | TUP Taguig</p>
     </footer>
+
     <script src="js/dashboard.js"></script>
 </body>
 </html>
