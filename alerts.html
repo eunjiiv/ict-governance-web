@@ -2,28 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Alerts | Cybersecurity</title>
+    <title>Alerts | Cybersecurity Advisories</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="logo">PH ICT Governance</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="agencies.html">Agencies</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
     <main class="container">
-        <h1>Public Cybersecurity Advisories</h1>
+        <h1>Public Safety & Cybersecurity Advisories</h1>
         
-        <div class="alert red">
-            <h3>🚨 How to Report Identity Theft</h3>
-            <p>1. Contact the NBI Cybercrime Division immediately.</p>
-            <p>2. Change all passwords and enable 2FA.</p>
-            <p>3. Report via the DICT Cert-PH portal.</p>
+        <div class="alert-box card" style="border-left: 8px solid #d9534f; background-color: #fdf7f7;">
+            <h3>🚨 How to Report Identity Theft or Hacking</h3>
+            <p>If your account has been compromised, follow these immediate steps:</p>
+            <ol style="margin-left: 20px; margin-top: 10px;">
+                <li><strong>Document Evidence:</strong> Take screenshots of the unauthorized activity, emails, or messages.</li>
+                <li><strong>Secure Accounts:</strong> Change your passwords immediately and enable Two-Factor Authentication (2FA).</li>
+                <li><strong>Notify Authorities:</strong> 
+                    <ul>
+                        <li><strong>DOJ Office of Cybercrime:</strong> cybercrime@doj.gov.ph</li>
+                        <li><strong>DICT CERT-PH:</strong> incident@cert.gov.ph / +63 2 8920 0101</li>
+                        <li><strong>NBI Cybercrime Division:</strong> (02) 8524-8216</li>
+                    </ul>
+                </li>
+            </ol>
         </div>
 
         <div class="card">
-            <h3>Detecting Fake Websites</h3>
+            <h3>🔍 Guidance on Detecting Fake Websites</h3>
+            <p>Scammers often create "look-alike" websites to steal your login credentials.</p>
+            <ul style="list-style-type: none; padding: 0; margin-top: 10px;">
+                <li style="margin-bottom: 10px;"><strong>✅ Check the Domain:</strong> Official Philippine government sites always end in <strong>.gov.ph</strong>. Be wary of .com or .net mimics.</li>
+                <li style="margin-bottom: 10px;"><strong>✅ Verify SSL:</strong> Look for the <strong>HTTPS</strong> and the padlock icon. While not a 100% guarantee of safety, the absence of it is a major red flag.</li>
+                <li style="margin-bottom: 10px;"><strong>✅ Grammar & Layout:</strong> Professional government sites rarely have frequent spelling errors or low-quality, blurry images.</li>
+            </ul>
+        </div>
+
+        <div class="card" style="border-top: 5px solid #f0ad4e;">
+            <h3>💰 Avoiding Investment Scams</h3>
+            <p>The SEC and DICT warn against "Get Rich Quick" schemes trending on social media.</p>
             <ul>
-                <li>Check for "HTTPS" in the URL.</li>
-                <li>Look for spelling errors in the domain name.</li>
-                <li>Avoid clicking links in unsolicited text messages (Smishing).</li>
+                <li><strong>Too Good to be True:</strong> If a project promises 100% returns in a week, it is likely a Ponzi scheme.</li>
+                <li><strong>Check SEC Registration:</strong> Before investing, verify if the company has a license to solicit investments from the <strong>Securities and Exchange Commission (SEC)</strong>.</li>
+                <li><strong>Pressure Tactics:</strong> Scammers will pressure you to "invest now" before the opportunity disappears.</li>
+            </ul>
+        </div>
+
+        <div class="card" style="border-top: 5px solid #5bc0de;">
+            <h3>🛡️ Protecting Your Identity (NPC Guidelines)</h3>
+            <p>According to the National Privacy Commission, you should:</p>
+            <ul>
+                <li>Never share your <strong>OTP (One-Time Password)</strong> with anyone, even someone claiming to be from a bank or government agency.</li>
+                <li>Be careful with "Social Media Challenges" that ask for your birthdate, mother’s maiden name, or first pet—these are common security questions.</li>
+                <li>Limit the amount of personal info you share on public social media profiles.</li>
             </ul>
         </div>
     </main>
+
+    <footer>
+        <p>Group Name | ITSP410-T | TUP Taguig | 2026</p>
+    </footer>
 </body>
 </html>
